@@ -4,14 +4,14 @@ public class App {
 
         LinkedList minhaLista = new LinkedList();
 
-        minhaLista.inserir(10);
-        minhaLista.inserir(20);
-        minhaLista.inserir(5);
-        minhaLista.inserir(15);
-        minhaLista.apagarNode(5);
-        minhaLista.inserir(12);
-        minhaLista.inserir(8);
-        minhaLista.apagarNode(20);
+        minhaLista.inserirOrdenado(1);
+        minhaLista.inserirOrdenado(2);
+        minhaLista.inserirOrdenado(5);
+        minhaLista.inserirOrdenado(15);
+        //minhaLista.apagarNode(5);
+        minhaLista.inserirOrdenado(12);
+        minhaLista.inserirOrdenado(8);
+        //minhaLista.apagarNode(20);
 
         minhaLista.imprimirLista();
     }

@@ -22,6 +22,33 @@ public void inserir (int data ){
     }
 }
 
+public void inserirOrdenado (int data ){
+    Node novoNo = new Node(data);
+    if (head == null) {
+        this.head = novoNo;
+    }else{
+        Node atual = this.head;
+        Node anterior = null;
+        if (data <= atual.data) {
+            novoNo.next = atual;
+            this.head = novoNo;
+            
+        }else{
+            while (atual != null && atual.data < data) {
+                anterior = atual;
+                atual = atual.next;
+            }
+            anterior.next = novoNo;
+            novoNo.next = atual;
+
+        }
+
+        
+    }
+}
+
+
+
 public void imprimirLista(){
     Node atual = head;
 
