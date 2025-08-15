@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Primeira Lista");
 
-        LinkedList minhaLista = new LinkedList();
+        ListaEncadeada minhaLista = new ListaEncadeada();
 
         minhaLista.inserirOrdenado(1);
         minhaLista.inserirOrdenado(2);
